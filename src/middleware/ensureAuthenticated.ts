@@ -17,7 +17,7 @@ export function ensureAuthenticated(request: Request, response: Response, next: 
         });
     }
 
-    const [,token] = authToken.split("");
+    const [,token] = authToken.split(" ");
 
     try {
         
